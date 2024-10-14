@@ -1,7 +1,7 @@
 # DNS Refresh
 
-A script that performs a DNS refresh and mark IPs that are no longer
-associated to a specific hostname as `hanging`, and current IPs as `active`.
+A script that performs a DNS refresh and marks IPs that are no longer
+associated to a specific hostname as `hanging`, and its current IP as `active`.
 
 Hosts are queried using https://dns.google.com/resolve, and the responses are saved to the `data.json` file in `/src` folder.
 
