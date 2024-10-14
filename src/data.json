@@ -1,0 +1,14 @@
+{
+  "google.com": {
+    "1.1.1.1": "hanging",
+    "2.2.2.2": "hanging",
+    "216.58.212.206": "active"
+  },
+  "google.co.uk": {
+    "3.3.3.3": "hanging",
+    "142.250.200.35": "active"
+  },
+  "apple.com": {
+    "17.253.144.10": "active"
+  }
+}
