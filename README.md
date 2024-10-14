@@ -27,8 +27,8 @@ HOST=google.co.uk yarn start
 
 ## Approach
 
-My approach involves pulling the current list of hosts from an object file containing the hosts and their associated IP addresses (or a new host from using the user input env variable). I then loop through the hosts and query the dns.google.com endpoint for each host.
+My approach involves pulling the current list of hosts from a json file containing the hosts and their associated IP addresses. I then loop through the hosts and query the dns.google.com endpoint for each host. A new host that doesn't exist in the file can be checked using the input env variable 'HOST'.
 
-Using the responses from each query, I can update the object file with the current IP address associated to its host. I'm then able to mark any IP addresses that do not match the current one as 'hanging'.
+Using the responses from each query, I can update the json file with the current IP addresses. I'm then able to mark any IP addresses that do not match the current IPs as 'hanging'.
 
-I could've used a database or csv file to store the hosts and IP addresses, but I thought using a json file and read/write functions was the most simple method.
+I could've used a database or csv file to store the data, but I thought using a json file and read/write functions was the most simple method.
